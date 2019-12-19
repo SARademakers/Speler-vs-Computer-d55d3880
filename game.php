@@ -12,7 +12,6 @@ if(isset($_GET["p1"])) {
 echo "";}
 else {
 ?>
-
             <h1>Player 1</h1>
                 <select name="p1" id="select1">
                     <option value="steen">Steen</option>
