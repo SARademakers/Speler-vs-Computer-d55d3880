@@ -21,48 +21,35 @@ else {
                 <input type="submit" value="submit" name="submit1">
 <?php
 }
+
 $random = array_rand ($ai);
 $one = $_GET["p1"];
+$computer = $ai[$random];
+echo "<h1>Speler kiest " . $one . "</h1>";
+echo "<h1>Computer kiest " . $computer . "</h1>";
+
 if ($random === 0) {
     if ($one === "steen") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest steen</h1>";
         echo "<h1>Gelijk spel!</h1>";
     }if ($one === "papier") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest steen</h1>";
         echo "<h1>Gewonnen!</h1>";
     }if ($one === "schaar") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest steen</h1>";
         echo "<h1>Verloren!</h1>";
     }
 }if ($random === 1) {
     if ($one === "steen") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest papier</h1>";
         echo "<h1>Verloren!</h1>";
     }if ($one === "papier") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest papier</h1>";
         echo "<h1>Gelijk spel!</h1>";
     }if ($one === "schaar") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest papier</h1>";
         echo "<h1>Gewonnen!</h1>";
     } 
 }if ($random === 2) {
     if ($one === "steen") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest schaar</h1>";
         echo "<h1>Gewonnen!</h1>";
     }if ($one === "papier") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest schaar</h1>";
         echo "<h1>Verloren!</h1>";
     }if ($one === "schaar") {
-        echo "<h1>Speler kiest " . $one . "</h1>";
-        echo "<h1>Computer kiest schaar</h1>";
         echo "<h1>Gelijk spel!</h1>";
     }  
 }
